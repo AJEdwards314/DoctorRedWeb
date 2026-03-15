@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander J. Edwards, Ph.D.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #5F76B0;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            color: #777;
+        }
+        .research-item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        .research-item img {
+            width: 120px;
+            height: auto;
+            margin-right: 1rem;
+            border-radius: 8px;
+        }
+        .research-content {
+            flex: 1;
+        }
+        .toggle-button {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-size: 1.2rem;
+            color: #4CAF50;
+        }
+        .details {
+            display: none;
+            margin-top: 0.5rem;
+        }	
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Alexander J. Edwards, Ph.D.</h1>
+        <p>Postdoctoral Research Associate</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#research">Research Interests</a>
+            <a href="#publications">Publications</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="headshot.jpg" alt="Headshot of Alexander J. Edwards on a foggy day in the suburbs of North Dallas. Alex wears a stylish white long sleave T-shirt, a classy brown plaid scarf, and the biggest smile you can imagine.">
+        <p>Dr. Alexander J. Edwards is a Post-Doctoral Research Associate with the Department of Electrical and Computer Engineering at the University of Maryland College Park in affiliation with the Laboratory for Physical Sciences.  In 2024, with his dissertation entitled "Stochasticity and Spintronics for Bio-inspired Computing and Hardware Security", he received his Ph.D. in Computer Engineering from the Erik Jonsson School of Engineering & Computer Science at The University of Texas at Dallas. He received the M.S. degree in Electrical Engineering-Computing Systems in 2024 from The University of Texas at Dallas and the B.S. degree in Computer Engineering in 2019 from Oklahoma Christian University, with a minor in Mathematics.</p>  
+        <p>In 2023, he was awarded a Chateaubriand Fellowship for a four-month research exchange visit to Université Paris-Saclay. In 2022, he was awarded the Department of Energy (DOE) Office of Science Graduate Student Research (SCGSR) Award for a three-month research exchange visit to Sandia National Laboratories in 2022. He has also been awarded the Best Teaching Assistant Award from the Erik Jonsson School of Engineering & Computer Science at The University of Texas at Dallas.</p>
+    </section>
+
+    <section id="research">
+    	<h2>Research Interests</h2>
+
+        <div class="research-item">
+            <img src="topic1.jpg" alt="Topic 1 Image">
+            <div class="research-content">
+                <p><strong>Topic 1</strong>: Brief description of research interest.</p>
+                <button class="toggle-button" onclick="toggleDetails('details1')">&#9660;</button>
+                <div id="details1" class="details">
+                    <p>Deeper description of the project, methods, goals, and findings.</p>
+                    <img src="figure1a.jpg" alt="Figure 1a" style="width:100%; max-width:400px;">
+                    <p>Related Publications:</p>
+                    <ul>
+                        <li><a href="#">Related Publication A</a></li>
+                        <li><a href="#">Related Publication B</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="research-item">
+            <img src="topic2.jpg" alt="Topic 2 Image">
+            <div class="research-content">
+                <p><strong>Topic 2</strong>: Brief description of research interest.</p>
+                <button class="toggle-button" onclick="toggleDetails('details2')">&#9660;</button>
+                <div id="details2" class="details">
+                    <p>Deeper description of the project, methods, goals, and findings.</p>
+                    <img src="figure2a.jpg" alt="Figure 2a" style="width:100%; max-width:400px;">
+                    <p>Related Publications:</p>
+                    <ul>
+                        <li><a href="#">Related Publication C</a></li>
+                        <li><a href="#">Related Publication D</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>List your publications here, or provide links to them. For example:</p>
+        <ul>
+            <li><a href="#">Publication Title 1</a></li>
+            <li><a href="#">Publication Title 2</a></li>
+            <li><a href="#">Publication Title 3</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>CV & Contact</h2>
+        <p><a href="Edwards-CV-012725.pdf" download>Edwards CV - Jan '25</a></p>
+        <p><a href="mailto:ajedwar@lps.umd.edu">Email: Laboratory for Physical Sciences</a></p>
+        <p><a href="mailto:alex@created6.com">Email: Personal</a></p>
+        <p><a href="https://www.linkedin.com/in/alexander-edwards-30287811a/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://scholar.google.com/citations?user=hKjPt8oAAAAJ&hl=en" target="_blank">Googles Scholar</a></p>
+        <p><a href="https://github.com/AJEdwards314" target="_blank">GitHub: AJEdwards314</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alexander Edwards. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
